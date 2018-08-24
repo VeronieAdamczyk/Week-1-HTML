@@ -1,0 +1,508 @@
+/* Website color Pallet */
+
+/*
+Main Colours:
+
+	
+
+	Primary color - rgb(183, 154, 246); //purple for navigation links
+
+	Secondary color - rgb(53, 38, 80); //darker purple
+
+	Third color - rgb(200, 177, 250); //lighter purple
+*/
+
+/*----------------------------------------------------------*/
+
+/* ----- Mobile Default Styles ----- */
+
+* {
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------*/
+
+/* ----- Custom Fonts ----- */
+@font-face {
+    font-family: '28_days';
+    src: url('../../Vendors/Fonts/28_days_later-webfont.eot');
+    src: url('../../Vendors/Fonts/28_days_later-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/28_days_later-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/28_days_later-webfont.woff') format('woff'),
+         url('../../Vendors/Fonts/28_days_later-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ----- Main Styles ----- */
+
+img,video{
+    
+    width: 100%; /*all img & Video will be set to 100% of parent container*/
+}
+
+body {
+    
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    color: #313131;
+}
+
+/*----------------------------------------------------------*/
+
+/* ----- Global Style ----- */
+
+a{
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+/*  ----- Home Page Styling ----- */
+.homeVid{
+    display: none;
+}
+.homeBGImg{
+    position: relative;
+    background-image: url(../img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+}
+
+.logoC{
+    position: absolute;
+    width: 40px;
+    top: 3px;
+    left:7px;
+    position: fixed;
+    z-index: 70;
+}
+
+/* ----- This is the shopping cart icon ----- */
+.cartIcon{
+    width:90px;
+    position: absolute;
+    top: 7px;
+    left: 45vw;
+    
+}
+
+.fa-shopping-basket{
+    
+    font-size: 2em;
+    color:rgb(183, 154, 246);
+}
+
+
+/* ----- This is the navigation list ----- */
+
+.navBtn{
+    font-size: 2em;
+    cursor: pointer;
+    color:white;
+    position: absolute;
+    margin: 0 0 0 80vw;
+    padding: 7px 3% 0 3%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.navC{
+    background-color: rgb(53, 38, 80);
+    border-bottom: 2px solid rgb(183, 154, 246);
+    height: 50px;
+    z-index: 50;
+}
+
+nav li a {
+    color:white;
+    display: block;
+    text-align: right;
+    
+}
+
+.menuList{
+    list-style-type: none; /*removes bullet points from ul */
+    padding: 0;
+    display: none;
+}
+
+.menuList a{
+    padding: 10px
+}
+
+#headerC{
+    position:fixed;
+    width:100%;
+}
+
+/* ----- This is to change font & position of writing on the home page -----*/
+
+.mainHeading{
+    font-family: 'Lovers Quarrel', cursive;
+    color:white;
+    letter-spacing: 3px;
+    font-size: 2em;
+    text-align: center;
+    margin: 45vh auto 0 auto;
+    font-weight: lighter;  
+}
+
+.slogan{
+    font-family: '28_days';
+    color: lightgrey;
+    padding: 25vh 2vw 0vh 65vw; 
+    font-size:1.5em;
+    text-align: right;
+    font-weight: lighter;
+    
+}
+
+/*----- This is for the new arrivals button -----*/
+
+.newAri{
+    
+    border:1px solid rgb(200,177,250); /* set a border*/
+    border-radius: 5px; /* gives border rounded edges*/
+    background-color:rgba(53, 38, 80, 0.47); /* background has opacity*/
+    padding:12px 10px;
+    color:rgb(255, 255, 255);
+    margin:2vh 0 0 38.5vw;
+}
+.buttonC{
+    
+}
+
+
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+
+/*  ----- Product Page Styling ----- */
+
+h1{
+    
+    font-size: 1.7em;
+    text-align: center;
+    font-weight:lighter;
+    text-transform: uppercase;    
+}
+
+p{
+    
+    text-align: center;
+    padding: 0 10px;
+    
+}
+
+
+/*----- Add To Cart button styling -----*/
+.addToCart{
+    
+    border: 1px solid rgb(200,177,250);
+    border-radius: 5px;
+    background-color:rgba(53, 38, 80);
+    padding: 12px 20px;
+    margin:1vh auto 15vh auto;
+    display: block
+    
+}
+.addToCart a{
+    color: white /* colour changed here because text is wrapped in an <a>*/
+}
+
+.addToCart a::after{
+    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07a"
+    
+}
+
+article{
+    text-align: center
+}
+
+/* ----- Flexbox Styling ----- */
+
+.allTrainers , .salesTrainers{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    height: auto;
+    
+}
+
+article{
+    margin:1%;
+    width: 200px;
+    text-align: center;
+    height: auto;
+}
+
+figcaption{
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 0 3px;
+    
+}
+strong{
+    display:block;
+}
+
+
+
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+/* ----- Contact Us Page Starts ----- */
+.contact{
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),
+    url(../img/trainerContactBackground.jpg);
+    padding:7vh 0 0 0;
+    color:white;
+}
+
+h2{
+    font-size: 1.25em;
+    text-align: center;
+    font-weight:lighter;
+  
+}
+
+.phone, .email {
+    border: 1px solid rgb(200,177,250);
+    border-radius: 5px;
+    background-color:rgb(53, 38, 80);
+    padding: 12px 20px;
+    margin: 1vh auto 1vh auto;
+    display: block   
+}
+
+.phone a, .email a{
+    color:white
+}
+.phone::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095";
+    color: rgb(183, 154, 246);
+}
+
+.email::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0e0";
+    color: rgb(183, 154, 246);
+}
+
+/* ----- Contact Us Page Ends ----- */
+
+
+
+
+
+
+/*----- Media Queries Start -----*/
+/*----- Only Include whats Changing -----*/
+
+@media screen and (min-width: 568px){
+    
+   .slogan{
+        
+ /* color:red;*/
+    font-size: 2em;
+    padding: 15vh 2vw 0vh 65vw;
+    }  
+    
+    .mainHeading{
+        
+    margin: 45vh 0 0vh 65vw; /* only need to change this as everything else stays the same*/
+   
+}
+.newAri{
+    
+    padding:12px 35px;
+    margin:2vh 0 0 69vw;
+    
+}
+
+
+/*----- Media Query for tablets -----*/
+    
+    @media screen and (min-width: 768px){
+      
+        
+        .slogan{
+        
+ /* color:red;*/
+    font-size: 3.5em;
+    padding: 15vh 2vw 0vh 65vw;
+    }  
+    
+    .mainHeading{
+    
+        font-size: 2.5em;
+        margin: 40vh 0 0vh 70vw; 
+   
+}
+    .newAri{
+    
+    padding:12px 45px;
+    margin:2vh 0 0 70vw;
+    font-size: 1.5em;  
+        
+    }
+
+    }
+/*----- Media Query for desk top -----*/
+        
+    @media screen and (min-width:1024px){
+   
+    
+     .cartIcon, .navBtn{
+        display:none;
+    }
+        
+       
+    .logoC{
+    position:absolute;
+    width: 150px;
+    top: 7vh;
+    left:3vw;
+    z-index: 45;
+}     
+    .mainHeading{
+    
+        font-size: 3em;
+        position:absolute;
+        top:60vh;
+        left:1vw;
+        margin:0 7vw 0 0;
+        
+   
+}
+    .slogan{
+    position: absolute;
+    top:25vh;
+    right:5vw;
+    z-index: 0;
+
+    }  
+        
+    .newAri{
+    
+    padding:12px 45px;
+    margin:67vh 67vw 0 1vw;
+    font-size: 1.5em;  
+        
+    }
+        
+    .navC{
+    border-bottom: none;
+    text-align: right;
+    padding:10px 0;
+    height: none;
+    
+}
+        #headerC{
+            z-index: 50;
+        } 
+        /*no changes made so far
+nav li a {
+    color:white;
+    display: block;
+    text-align: right;
+        */
+    
+}
+    .menuList{
+            display: inline;
+        }
+    .menuList a{
+        padding: 10px;
+        text-align: center;
+        display: inline;
+    }
+    .menuList li{
+        display: inline;
+        font-size: 0.7em;
+        padding:0 7px;
+        margin: 0 5px;
+    }
+    
+    nav a{
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        
+    }
+    nav a:hover{
+        color: lightpink;
+    }
+    
+    
+}
+/*----- Media Query for larger desk top -----*/
+
+@media screen and (min-width:1280px){
+    .backgroundBGImg{
+        background-image:none;      
+    }
+    .homeVid{
+        display:inline-block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -100;
+        
+        
+    }
+    .largeScreen{
+        overflow-y: hidden;
+        background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6))
+    
+}
+/*----- Media Queries End -----*/
+
+
+
+
+
+
